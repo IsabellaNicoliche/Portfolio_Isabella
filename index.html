@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Isabella Nicoliche| Portfólio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="topo">
+        <nav class="nav">
+            <span class="logo">Isabella</span>
+            <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu">☰</button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#habilidades">Habilidades</a></li>
+                <li><a href="#projetos">Projetos</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+            <button class="tema-toggle" id="temaToggle">🌙</button>
+        </nav>
+    </header>
+ 
+    <section class="hero">
+        <h1>Olá, eu sou a Isabella</h1>
+        <p>Desenvolvedora Full Stack</p>
+        <a href="#contato" class="botao">Entrar em contato</a>
+    </section>
+ 
+    <section class="secao" id="sobre">
+        <h2>Sobre mim</h2>
+        <p>
+            Desenvolvedora apaixonada por tecnologia, com experiência em desenvolvimento web
+            utilizando HTML, CSS, JavaScript e Java. Gosto de criar soluções práticas e bem
+            organizadas, sempre buscando aprender novas ferramentas.
+        </p>
+    </section>
+ 
+    <section class="secao" id="habilidades">
+        <h2>Habilidades</h2>
+        <ul class="tags" id="listaHabilidades"></ul>
+    </section>
+ 
+    <section class="secao" id="projetos">
+        <h2>Projetos</h2>
+        <div class="projetos" id="listaProjetos"></div>
+    </section>
+ 
+    <section class="secao" id="contato">
+        <h2>Contato</h2>
+        <form id="formContato">
+            <label>Nome
+                <input type="text" id="nomeContato" required>
+            </label>
+            <label>E-mail
+                <input type="email" id="emailContato" required>
+            </label>
+            <label>Mensagem
+                <textarea id="mensagemContato" rows="4" required></textarea>
+            </label>
+            <button type="submit">Enviar</button>
+        </form>
+        <p id="confirmacaoContato"></p>
+    </section>
+ 
+    <footer>
+        <p>&copy; <span id="anoAtual"></span> Isabella</p>
+    </footer>
+ 
+    <script src="script.js"></script>
+</body>
+</html>
